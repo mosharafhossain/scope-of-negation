@@ -20,7 +20,7 @@ export HDF5_USE_FILE_LOCKING='FALSE'
 
 ## How to Run
 
-- Example command line to train the cue-detector: 
+- Example command line to train the scope-detector: 
 ```bash
   python train.py -c ./config/config.json 
 ```
