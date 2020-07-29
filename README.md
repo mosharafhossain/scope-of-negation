@@ -1,4 +1,4 @@
-Negation Cue Detection
+Scope of Negation 
 ===================================================================
 
 ## Requirements
@@ -27,7 +27,7 @@ export HDF5_USE_FILE_LOCKING='FALSE'
   + Arguments:
 	  - -c, --config_path: path to the configuration file, (required)
   
-  *Note that: Training the system is optional, a trained model is already provided in "./model" directory. The pre-trained model can be used to predict negation cues in a text file (step is given below).
+  *Note that: Training the scope detector is optional, a trained model is already provided in "./model" directory. Below step shows how to use the pre-trained model to predict scope of negation of the sentences in given text file. The file should have one sentence per line.
 	
 - Example command line to apply prediction on a given text file. 
 ```bash
@@ -41,7 +41,7 @@ export HDF5_USE_FILE_LOCKING='FALSE'
   
 ## Input and Output Files
 - Sample input file:   \
-./data/sample-io/input_file.txt (input file must contain one sentence per line)
+./data/sample-io/input_file.txt (input file must contain one sentence per line) \
 Sample sentence: \
 "I don't mean to be glib about your concerns, but if I were you, I might be more concerned about the near-term rate implications of this $1.	"
 
